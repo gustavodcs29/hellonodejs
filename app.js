@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
 
 
 app.get('/version', function (req, res) {
-  const version = 2
+  const version = 3
   res.status(200).send("version app = " + version);
 });
 
