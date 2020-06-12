@@ -8,8 +8,9 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/update', function (req, res) {
-  res.status(200).send('Our app is updated');
+app.get('/version', function (req, res) {
+  const version = 2
+  res.status(200).send("version app = " + version);
 });
 
 app.listen(8080, function () {
